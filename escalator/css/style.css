@@ -1,0 +1,594 @@
+/*Обнуление*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+/*--------------------*/
+
+@font-face {
+    font-family: 'ArticoEx ExtraLigh';
+    src: url('../fonts/ArticoExpandedExtraLight.eot');
+    src: url('../fonts/ArticoExpandedExtraLight.eot?#iefix') format('embedded-opentype'), url('../fonts/ArticoExpandedExtraLight.woff2') format('woff2'), url('../fonts/ArticoExpandedExtraLight.woff') format('woff'), url('../fonts/ArticoExpandedExtraLight.ttf') format('truetype'), url('../fonts/ArticoExpandedExtraLight.svg#ArticoExpandedExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArticoEx Heavy';
+    src: url('../fonts/ArticoExpandedHeavy.eot');
+    src: url('../fonts/ArticoExpandedHeavy.eot?#iefix') format('embedded-opentype'), url('../fonts/ArticoExpandedHeavy.woff2') format('woff2'), url('../fonts/ArticoExpandedHeavy.woff') format('woff'), url('../fonts/ArticoExpandedHeavy.ttf') format('truetype'), url('../fonts/ArticoExpandedHeavy.svg#ArticoExpandedHeavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArticoEx Medium';
+    src: url('../fonts/ArticoExpandedMedium.eot');
+    src: url('../fonts/ArticoExpandedMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/ArticoExpandedMedium.woff2') format('woff2'), url('../fonts/ArticoExpandedMedium.woff') format('woff'), url('../fonts/ArticoExpandedMedium.ttf') format('truetype'), url('../fonts/ArticoExpandedMedium.svg#ArticoExpandedMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArticoEx Black';
+    src: url('../fonts/ArticoExpandedBlack.eot');
+    src: url('../fonts/ArticoExpandedBlack.eot?#iefix') format('embedded-opentype'), url('../fonts/ArticoExpandedBlack.woff2') format('woff2'), url('../fonts/ArticoExpandedBlack.woff') format('woff'), url('../fonts/ArticoExpandedBlack.ttf') format('truetype'), url('../fonts/ArticoExpandedBlack.svg#ArticoExpandedBlack') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArticoEx ExtraBold';
+    src: url('../fonts/ArticoExpandedExtraBold.eot');
+    src: url('../fonts/ArticoExpandedExtraBold.eot?#iefix') format('embedded-opentype'), url('../fonts/ArticoExpandedExtraBold.woff2') format('woff2'), url('../fonts/ArticoExpandedExtraBold.woff') format('woff'), url('../fonts/ArticoExpandedExtraBold.ttf') format('truetype'), url('../fonts/ArticoExpandedExtraBold.svg#ArticoExpandedExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArticoEx Bold';
+    src: url('../fonts/ArticoExpandedBold.eot');
+    src: url('../fonts/ArticoExpandedBold.eot?#iefix') format('embedded-opentype'), url('../fonts/ArticoExpandedBold.woff2') format('woff2'), url('../fonts/ArticoExpandedBold.woff') format('woff'), url('../fonts/ArticoExpandedBold.ttf') format('truetype'), url('../fonts/ArticoExpandedBold.svg#ArticoExpandedBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArticoEx Light';
+    src: url('../fonts/ArticoExpandedLight.eot');
+    src: url('../fonts/ArticoExpandedLight.eot?#iefix') format('embedded-opentype'), url('../fonts/ArticoExpandedLight.woff2') format('woff2'), url('../fonts/ArticoExpandedLight.woff') format('woff'), url('../fonts/ArticoExpandedLight.ttf') format('truetype'), url('../fonts/ArticoExpandedLight.svg#ArticoExpandedLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArticoEx Reg';
+    src: url('../fonts/ArticoExpanded.eot');
+    src: url('../fonts/ArticoExpanded.eot?#iefix') format('embedded-opentype'), url('../fonts/ArticoExpanded.woff2') format('woff2'), url('../fonts/ArticoExpanded.woff') format('woff'), url('../fonts/ArticoExpanded.ttf') format('truetype'), url('../fonts/ArticoExpanded.svg#ArticoExpanded') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Artico Medium';
+    src: url('../fonts/ArticoMedium.eot');
+    src: url('../fonts/ArticoMedium.eot?#iefix') format('embedded-opentype'), url('../fonts/ArticoMedium.woff2') format('woff2'), url('../fonts/ArticoMedium.woff') format('woff'), url('../fonts/ArticoMedium.ttf') format('truetype'), url('../fonts/ArticoMedium.svg#ArticoMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Artico Light';
+    src: url('../fonts/ArticoLight.eot');
+    src: url('../fonts/ArticoLight.eot?#iefix') format('embedded-opentype'), url('../fonts/ArticoLight.woff2') format('woff2'), url('../fonts/ArticoLight.woff') format('woff'), url('../fonts/ArticoLight.ttf') format('truetype'), url('../fonts/ArticoLight.svg#ArticoLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Artico Reg';
+    src: url('../fonts/Artico.eot');
+    src: url('../fonts/Artico.eot?#iefix') format('embedded-opentype'), url('../fonts/Artico.woff2') format('woff2'), url('../fonts/Artico.woff') format('woff'), url('../fonts/Artico.ttf') format('truetype'), url('../fonts/Artico.svg#Artico') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.container-header {
+    max-width: 1560px;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+
+.container {
+    max-width: 1145px;
+    position: relative;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 0 15px;
+}
+
+.header__row {
+    padding: 23px 0 26px 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 50px 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 24px 58px rgba(0, 0, 0, 0.08), 0px 10.0266px 24.231px rgba(0, 0, 0, 0.0575083), 0px 5.36071px 12.9551px rgba(0, 0, 0, 0.0476886), 0px 3.00517px 7.2625px rgba(0, 0, 0, 0.04), 0px 1.59602px 3.85706px rgba(0, 0, 0, 0.0323114), 0px 0.664142px 1.60501px rgba(0, 0, 0, 0.0224916);
+}
+
+.menu {}
+
+.menu__logo {
+    margin-right: 51px;
+}
+
+.menu__list {
+    display: flex;
+    font-family: 'Artico Reg';
+    font-size: 16px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #5A808E;
+}
+
+.menu__item {
+    cursor: pointer;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 34px;
+}
+
+.submenu {
+    position: relative;
+    padding-right: 15px;
+}
+
+.submenu::after {
+    content: '';
+    background-image: url(../image/sub-arrow.svg);
+    width: 9px;
+    height: 9px;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 1px;
+    top: 5px;
+}
+
+.submenu__list {
+    padding: 30px 0;
+    background: #436f7f;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Artico Light';
+    text-transform: none;
+}
+
+.submenu__item {
+    padding: 14px 36px;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+.submenu__item a {
+    color: white;
+    display: block;
+    transition: 0.3s;
+    height: 100%;
+    width: 100%;
+}
+
+.submenu__item:hover {
+    background: #3C6371;
+}
+
+.submenu__item:hover a {
+    transform: translate(10px, 0);
+}
+
+.submenu__item a:hover {}
+
+.submenu__margin {
+    height: 27px;
+    background-image: url(../image/sublist-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.submenu__block {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 100%);
+    -ms-transform: translate(-50%, 100%);
+    transform: translate(-50%, 100%);
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-transition: opacity 0.4s linear;
+    -o-transition: opacity 0.4s linear;
+    transition: opacity 0.4s linear;
+}
+
+.menu__item:hover .submenu__block {
+    visibility: visible;
+    opacity: 1;
+}
+
+.methods {
+    padding-top: 185px;
+    margin-bottom: 100px;
+}
+
+.methods__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.methods__text {
+    width: 90%;
+}
+
+.methods__title {
+    font-family: 'ArticoEx Heavy';
+    font-size: 52px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #436F7F;
+    text-align: center;
+}
+
+.methods__description {
+    color: #436F7F;
+    font-size: 26px;
+    line-height: 125%;
+    font-family: 'ArticoEx Light';
+    text-align: center;
+    margin-top: 30px;
+}
+
+.methods__options {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.options {}
+
+.options__title {}
+
+.title {
+    font-size: 36px;
+    font-family: 'ArticoEx Bold';
+    text-align: center;
+}
+
+.title-red {
+    color: #EC472E;
+}
+
+.options__list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.options__item {
+    width: 49%;
+}
+
+.options__item:nth-child(3) {
+    width: 100%;
+    padding: 26px 99px;
+    margin-top: 30px;
+}
+
+.no-btn {
+    font-family: 'ArticoEx Medium';
+    font-size: 18px;
+    text-align: center;
+    color: #436F7F;
+    background: linear-gradient(162.22deg, #F3F3F3 9.79%, #FFFFFF 92.15%);
+    box-shadow: 0px 12.5216px 38.8168px rgba(0, 0, 0, 0.035), 0px 6.6501px 20.6153px rgba(0, 0, 0, 0.0282725), 0px 2.76726px 8.5785px rgba(0, 0, 0, 0.0196802);
+    border-radius: 20px;
+    border: 1px solid #436F7F;
+    padding: 26px 0;
+}
+
+.methods__info {
+    margin-top: 131px;
+}
+
+.info {}
+
+.info__text {
+    font-family: 'ArticoEx Light';
+    line-height: 165%;
+    font-size: 18px;
+}
+
+.info__detailed {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.info-detailed {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-detailed__row {
+    margin-right: 30px;
+    width: 48%;
+}
+
+.info-detailed__text_bold {
+    font-family: 'ArticoEx Medium';
+    font-size: 18px;
+    line-height: 165%;
+}
+
+.info-detailed__list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 43px;
+}
+
+.info-detailed__item {
+    width: 166px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-btn_red {
+    font-size: 14px;
+    color: #EC472E;
+    border: 1px solid #EC472E;
+    padding: 26px 13px;
+}
+
+.info__detailed_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.info__detailed_img {
+    width: 558px;
+    /* height: 388px; */
+}
+
+.benefits {}
+
+.benefits__row:nth-child(1) {
+    background-color: #436F7F;
+}
+
+.benefits__row:nth-child(2) {
+    background-color: #F2F2F2;
+}
+
+.plus {
+    height: 450px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefits__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.benefits__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.benefits__item {
+    width: 264px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-btn__white {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 26px 20px;
+    line-height: 145%;
+}
+
+.benefits__list_red {}
+
+.benefits__item_red {
+    width: 48.7%;
+    background: transparent;
+    font-family: 'ArticoEx Medium';
+    font-size: 22px;
+    line-height: 145%;
+    padding: 26px 62px;
+}
+
+.minus {
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.desk-none {
+    display: none;
+}
+
+.menu__title {
+    font-family: 'ArticoEx Reg';
+    font-size: 22px;
+    color: #436F7F;
+    position: relative;
+    margin-right: 115px;
+}
+
+.menu__title::after {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: #436F7F;
+    position: absolute;
+    top: 50%;
+    left: -122px;
+}
+
+.menu__title::before {
+    content: '';
+    width: 100px;
+    height: 2px;
+    background-color: #436F7F;
+    position: absolute;
+    top: 50%;
+    right: -122px;
+}
+
+.menu__burger-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(../image/gamburger.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.img-mob {
+    width: calc(100% + 20px);
+    background-image: url(../image/mob-img.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: none;
+    height: 203px;
+    margin-top: 31px;
+}
+
+#dis-1000 {
+    display: none;
+}
